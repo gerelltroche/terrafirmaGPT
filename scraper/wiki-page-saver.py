@@ -29,7 +29,7 @@ def save_page(url, content):
 
 def scrape_links():
     queue = deque([URL])
-
+    
     while queue:
         url = queue.popleft()
         response = requests.get(url)

@@ -51,7 +51,7 @@ def main():
     question_vector = embed_question(question)
 
     # Query Pinecone for nearest documents
-    nearest_documents = query_pinecone(question_vector, 5)
+    nearest_documents = query_pinecone(question_vector, 10)
 
     # Print the results
     with open("output.txt", "w") as file:
@@ -80,6 +80,7 @@ def main():
 
         Answer:
     """
+    print(f"Prompting {prompt}")
     response = openai.ChatCompletion.create(
         model="gpt-3.5-turbo",
         messages=[
