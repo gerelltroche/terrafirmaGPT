@@ -1,4 +1,4 @@
-# TerrafirmaGPT (Retreival Augmented Generation)
+# TerrafirmaGPT (Retrieval Augmented Generation)
 
 TerrafirmaGPT is an AI-powered chatbot that utilizes Python, [OpenAI embeddings](https://platform.openai.com/docs/guides/embeddings), and [Pinecone.io](https://www.pinecone.io/) to provide users with modpack information and answer queries based on wiki pages.
 
